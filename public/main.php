@@ -563,7 +563,7 @@ case "insert_account" :
         //$entry["uid"] = $uid; // @todo
 
         $entry["mail"] = $mail;
-        $entry["userPassword"] = phamm_password_hash($password1);
+        $entry["userPassword"] = phamm_password_hash($password1,$password2);
         $entry["sn"] = $sn;
         $entry["givenname"] = $givenName;
         $entry["cn"] = $givenName.' '.$sn;
